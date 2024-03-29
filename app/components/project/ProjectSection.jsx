@@ -4,7 +4,9 @@ import ProjectCard from './ProjectCard'
 import ProjectTag from './ProjectTag'
 import {motion, useInView} from 'framer-motion'
 
-const projectsInfo = [
+const projectsInfo = []
+
+const projectsInfo1 = [
   {
     id: 1,
     title: "Proyecto 1",
