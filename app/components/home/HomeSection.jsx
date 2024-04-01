@@ -13,9 +13,9 @@ const HomeSection = () => {
   return (
     <section>
         <motion.div 
-        initial={{ opacity: 0, scale: 0.5}} 
+        initial={{ opacity: 0, scale: 0.25}} 
         animate={{opacity: 1, scale: 1}} 
-        transition={{duration: 1.5}} 
+        transition={{duration: 1}} 
         className="grid grid-cols-1 sm:grid-cols-12">
             <div className="col-span-7 place-self-center text-center sm:text-left">
                 <h1 className="text-white mb-4 text-5xl lg:text-6xl font-extrabold">
