@@ -110,7 +110,7 @@ const AboutSection = () => {
   return (
     <section id='about' className="text-white">
         <motion.div 
-            initial={{ opacity: 0, scale: 0.25}} 
+            initial={{ opacity: 0, scale: 0.5}} 
             animate={{opacity: 1, scale: 1}} 
             transition={{duration: 1, delay: 0.3}}
             className="md:grid md:grid-cols-2 place-self-center gap-8 items-center py-8 xl:gap-16 sm:py-16 xl:px-16">

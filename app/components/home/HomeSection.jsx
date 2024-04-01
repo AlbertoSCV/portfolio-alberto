@@ -13,7 +13,7 @@ const HomeSection = () => {
   return (
     <section>
         <motion.div 
-        initial={{ opacity: 0, scale: 0.25}} 
+        initial={{ opacity: 0, scale: 0.5}} 
         animate={{opacity: 1, scale: 1}} 
         transition={{duration: 1}} 
         className="grid grid-cols-1 sm:grid-cols-12">
