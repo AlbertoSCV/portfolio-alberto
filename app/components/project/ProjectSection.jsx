@@ -56,10 +56,14 @@ const projectsInfo1 = [
 
 const ProjectSection = () => {
 
+  const MotionProjectCard = motion(ProjectCard);
+
   const [tag, setTag] = useState("Todos");
+  const [restartAnimation, setRestartAnimation] = useState(0);
 
   const handleTagChange = (newTag) => {
     setTag(newTag);
+    setRestartAnimation(restartAnimation+1);
   };
 
   const fiterTags = projectsInfo.filter((project) => 
@@ -67,7 +71,7 @@ const ProjectSection = () => {
   );
 
   const ref = useRef(null);
-  const isInView = useInView(ref, {once: true});
+  const isInView = useInView(ref);
 
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
@@ -111,25 +115,27 @@ const ProjectSection = () => {
           name={"Redes"}
         />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {fiterTags.map((project, index) => 
-        <motion.li 
-          variants={cardVariants} 
-          initial="initial" 
-          animate={isInView ? 'animate' : 'initial'}
-          transition={{duration: 0.8, delay: index * 0.8}}
-          className="list-none" key={project.id}>
-          <ProjectCard 
-            key={project.id}
-            title={project.title}
-            desc={project.desc}
-            imgUrl={project.path}
-            gitUrl={project.gitUrl}
-            prevUrl={project.prevUrl}
-          />
-        </motion.li>
-        )}
-      </ul>
+      <div ref={ref} key={tag}>
+        <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
+          {fiterTags.map((project, index) => 
+          <motion.li 
+            variants={cardVariants} 
+            initial="initial" 
+            animate={(isInView || restartAnimation>0) ? 'animate' : 'initial'}
+            transition={{duration: 0.8, delay: index * 0.8}}
+            className="list-none" key={project.id}>
+            <MotionProjectCard
+              key={project.id}
+              title={project.title}
+              desc={project.desc}
+              imgUrl={project.path}
+              gitUrl={project.gitUrl}
+              prevUrl={project.prevUrl}
+            />
+          </motion.li>
+          )}
+        </ul>
+      </div>
     </section>
   )
 }
