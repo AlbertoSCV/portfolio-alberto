@@ -112,7 +112,7 @@ const AboutSection = () => {
         <motion.div 
             initial={{ opacity: 0, scale: 0.5}} 
             animate={{opacity: 1, scale: 1}} 
-            transition={{duration: 1, delay: 0.3}}
+            transition={{duration: 0.5, delay: 0.4}}
             className="md:grid md:grid-cols-2 place-self-center gap-8 items-center py-8 xl:gap-16 sm:py-16 xl:px-16">
                 <Image
                     src="/images/about-pc.png"
