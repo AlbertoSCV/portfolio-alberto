@@ -13,4 +13,4 @@ Este repositorio contiene el código fuente de mi portafolio personal, que es un
 
 - HTML5 y CSS3 para la estructura y el estilo.
 - JavaScript para la interactividad y funcionalidad dinámica.
-- El framework utilizado fue Next.js y fue desplegado en Vercel.
+- Se utilizó el framework Next.js y fue desplegado en Vercel.
