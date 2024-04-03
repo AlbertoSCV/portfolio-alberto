@@ -4,7 +4,38 @@ import ProjectCard from './ProjectCard'
 import ProjectTag from './ProjectTag'
 import {motion, useInView} from 'framer-motion'
 
-const projectsInfo = []
+const projectsInfo = [
+  {
+    id: 1,
+    title: "Portafolio",
+    desc: "Es una muestra de mis proyectos de programación, destacando mis habilidades y experiencia en desarrollo.",
+    path: "/images/projects/portfolio.png",
+    gitUrl: "https://github.com/AlbertoSCV/portfolio-alberto",
+    prevUrl: "/",
+    tag: ["Todos", "Web"],
+    type: "public"
+  },
+  {
+    id: 2,
+    title: "ClimateChangeApp",
+    desc: "Aplicación móvil sobre noticias del cambio climático, permite autenticación, inicio anónimo y agregar comentarios al estar autenticado.",
+    path: "/images/projects/climate-app.png",
+    gitUrl: "https://github.com/AlbertoSCV/ClimateChangeApp",
+    prevUrl: "https://github.com/AlbertoSCV/ClimateChangeApp/blob/master/README.md",
+    tag: ["Todos", "Móvil"],
+    type: "public"
+  },
+  {
+    id: 3,
+    title: "Autorizaciones y Rosters",
+    desc: "Proyecto actualmente en desarrollo en la compañia Copa Airlines, es de código privado por lo que no es accesible.",
+    path: "/images/projects/auth-rost.png",
+    gitUrl: "/",
+    prevUrl: "/",
+    tag: ["Todos", "Desktop"],
+    type: "private"
+  }
+]
 
 const projectsInfo1 = [
   {
@@ -14,7 +45,8 @@ const projectsInfo1 = [
     path: "/images/projects/project-template.png",
     gitUrl: "/",
     prevUrl: "/",
-    tag: ["Todos", "Web"]
+    tag: ["Todos", "Web"],
+    type: "public"
   },
   {
     id: 2,
@@ -23,7 +55,8 @@ const projectsInfo1 = [
     path: "/images/projects/project-template.png",
     gitUrl: "/",
     prevUrl: "/",
-    tag: ["Todos", "Server"]
+    tag: ["Todos", "Server"],
+    type: "public"
   },
   {
     id: 3,
@@ -32,7 +65,8 @@ const projectsInfo1 = [
     path: "/images/projects/project-template.png",
     gitUrl: "/",
     prevUrl: "/",
-    tag: ["Todos", "Móvil"]
+    tag: ["Todos", "Móvil"],
+    type: "public"
   },
   {
     id: 4,
@@ -41,7 +75,8 @@ const projectsInfo1 = [
     path: "/images/projects/project-template.png",
     gitUrl: "/",
     prevUrl: "/",
-    tag: ["Todos", "Desktop"]
+    tag: ["Todos", "Desktop"],
+    type: "public"
   },
   {
     id: 5,
@@ -50,7 +85,8 @@ const projectsInfo1 = [
     path: "/images/projects/project-template.png",
     gitUrl: "/",
     prevUrl: "/",
-    tag: ["Todos", "Redes"]
+    tag: ["Todos", "Redes"],
+    type: "public"
   }
 ]
 
@@ -116,24 +152,42 @@ const ProjectSection = () => {
         />
       </div>
       <div ref={ref} key={tag}>
-        <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
-          {fiterTags.map((project, index) => 
-          <motion.li 
-            variants={cardVariants} 
-            initial="initial" 
-            animate={(isInView || restartAnimation>0) ? 'animate' : 'initial'}
-            transition={{duration: 0.8, delay: index * 0.8}}
-            className="list-none" key={project.id}>
-            <MotionProjectCard
-              key={project.id}
-              title={project.title}
-              desc={project.desc}
-              imgUrl={project.path}
-              gitUrl={project.gitUrl}
-              prevUrl={project.prevUrl}
-            />
-          </motion.li>
-          )}
+      {
+            fiterTags < 1 &&
+              <div key={""} className='flex flex-row-3 justify-center items-center'>
+                <p className='text-center text-sm sm:text-base'>
+                ¡Hola! Parece que esta sección está un poco vacía 
+                en este momento, ¡pero no te preocupes! Siéntete 
+                libre de explorar otras categorías para descubrir 
+                más sobre mis proyectos y experiencias. Estoy 
+                constantemente trabajando en nuevas ideas y proyectos 
+                emocionantes, así que asegúrate de volver pronto para 
+                ver las actualizaciones. ¡Gracias por tu interés y 
+                paciencia!
+                </p>
+              </div>
+          }
+        <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">    
+          {fiterTags.map((project, index) => {
+              return(
+                <motion.li 
+                  variants={cardVariants} 
+                  initial="initial" 
+                  animate={(isInView || restartAnimation>0) ? 'animate' : 'initial'}
+                  transition={{duration: 0.8, delay: index * 0.6}}
+                  className="list-none" key={project.id}>
+                  <MotionProjectCard
+                    key={project.id}
+                    title={project.title}
+                    desc={project.desc}
+                    imgUrl={project.path}
+                    gitUrl={project.gitUrl}
+                    prevUrl={project.prevUrl}
+                    type={project.type}
+                    />
+                </motion.li>
+              );
+          })}
         </ul>
       </div>
     </section>
