@@ -41,9 +41,9 @@ const ProjectCard = ({imgUrl, title, desc, gitUrl, prevUrl, type}) => {
         }
 
         </div>
-        <div className='text-white rounded-b-xl bg-[#232323] px-2 pb-3 pt-2'>
-            <h4 className="text-lg font-semibold pl-1">{title}</h4>
-            <p className='text-[#ADB7BE] text-base pl-2'>{desc}</p>
+        <div className='text-white rounded-b-xl bg-[#232323] px-2 pt-3 pb-4'>
+            <h4 className="text-lg font-semibold pl-2">{title}</h4>
+            <p className='text-[#ADB7BE] text-base pl-4'>{desc}</p>
         </div>
     </div>
   )

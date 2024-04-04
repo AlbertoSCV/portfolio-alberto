@@ -155,19 +155,29 @@ const ProjectSection = () => {
       {
             fiterTags < 1 &&
               <div key={""} className='flex flex-row-3 justify-center items-center'>
-                <p className='text-center text-sm sm:text-base'>
-                ¡Hola! Parece que esta sección está un poco vacía 
-                en este momento, ¡pero no te preocupes! Siéntete 
-                libre de explorar otras categorías para descubrir 
-                más sobre mis proyectos y experiencias. Estoy 
-                constantemente trabajando en nuevas ideas y proyectos 
-                emocionantes, así que asegúrate de volver pronto para 
-                ver las actualizaciones. ¡Gracias por tu interés y 
-                paciencia!
-                </p>
+                <motion.p 
+                initial={{opacity:0}}
+                animate={{opacity:100}}
+                transition={{duration:1, delay:0.2}}
+                className='text-center text-sm sm:text-base'>
+                  ¡Hola! Parece que esta sección está un poco vacía 
+                  en este momento, ¡pero no te preocupes! 
+                  <br />
+                  Siéntete 
+                  libre de explorar otras categorías para descubrir 
+                  más sobre mis proyectos y experiencias. 
+                  <br />
+                  Estoy 
+                  constantemente trabajando en nuevas ideas y proyectos 
+                  emocionantes, así que asegúrate de volver pronto para 
+                  ver las actualizaciones. 
+                  <br />
+                  ¡Gracias por tu interés y 
+                  paciencia!
+                </motion.p>
               </div>
           }
-        <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">    
+        <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">    
           {fiterTags.map((project, index) => {
               return(
                 <motion.li 
