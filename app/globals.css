@@ -38,3 +38,8 @@ body {
 #proyects, #contact-me{
   scroll-margin-top: 135px;
 }
+
+::selection {
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));; /* Cambia el color de resaltado a rojo */
+  color: white; /* Cambia el color del texto resaltado a blanco */
+}
