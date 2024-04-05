@@ -1,14 +1,23 @@
-import React from 'react'
+'use client';
+import React, {useEffect} from 'react'
 import Title from './Titles'
 import Image from 'next/image'
 import FormExpTitle from './FormExpTitle'
 import ParentCont from './ParentCont'
 import CompApt from './CompApt'
 import Link from 'next/link'
+import {motion} from 'framer-motion'
 
 const See_CV = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
   return (
-    <div className='mt-14'>
+    <motion.div 
+    initial={{ opacity: 0, scale: 0.85}} 
+    animate={{opacity: 1, scale: 1}} 
+    transition={{duration: 0.9, delay:0.1}} 
+    className='mt-14'>
         <div>
             <Title title="Perfil"/>
             <ParentCont>
@@ -319,7 +328,7 @@ const See_CV = () => {
         <div>
 
         </div>
-    </div>
+    </motion.div>
   )
 }
 
