@@ -16,7 +16,7 @@ const See_CV = () => {
     <motion.div 
     initial={{ opacity: 0, scale: 0.85}} 
     animate={{opacity: 1, scale: 1}} 
-    transition={{duration: 0.9, delay:0.1}} 
+    transition={{duration: 0.7, delay:0.2}} 
     className='mt-14'>
         <div>
             <Title title="Perfil"/>
