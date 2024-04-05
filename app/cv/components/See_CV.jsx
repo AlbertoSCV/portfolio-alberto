@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 const See_CV = () => {
   return (
-    <div className='mt-6'>
+    <div className='mt-14'>
         <div>
             <Title title="Perfil"/>
             <ParentCont>
@@ -301,7 +301,7 @@ const See_CV = () => {
                 /> 
             </ParentCont>
         </div>
-        <div className='mb-6'>
+        <div className='mb-14'>
             <Title title="Voluntariado"/>
             <ParentCont>
                 <FormExpTitle
