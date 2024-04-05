@@ -8,7 +8,7 @@ import Footer from "./components/footer/Footer";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-[#181818]">
-      <NavBar/>
+    <NavBar sectionVisible={true}/>  
       <div className="container mt-28 mx-auto px-12 sm:px-4 py-4">
         <HomeSection/>
         <AboutSection/>
