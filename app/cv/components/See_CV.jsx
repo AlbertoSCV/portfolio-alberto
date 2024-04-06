@@ -20,7 +20,7 @@ const See_CV = () => {
     className='mt-10'>
         <div>
             <div className='hidden sm:flex sm:flex-row sm:justify-end'>
-                <Link href='/cv.pdf' download="cv" className='mr-6 absolute sm:mt-5 md:mt-4'>
+                <Link href='/cv_es.pdf' download="cv" className='mr-6 absolute sm:mt-5 md:mt-4'>
                     <button href='/cv' className="font-semibold px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-tr from-[#FDA000] to-[#D3208B] text-white hover:bg-slate-200">
                         Descargar CV
                     </button>
@@ -333,7 +333,7 @@ const See_CV = () => {
             </ParentCont>
         </div>
         <div className='mb-14 grid grid-cols-1 sm:flex sm:flex-row sm:justify-center md:justify-start'>
-            <Link href='/cv.pdf' download="cv" className='mx-10'>
+            <Link href='/cv_es.pdf' download="cv" className='mx-10'>
                 <button href='/cv' className="font-semibold px-10 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#FDA000] to-[#D3208B] text-white hover:bg-slate-200">
                     Descargar CV
                 </button>
