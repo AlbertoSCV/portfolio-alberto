@@ -95,7 +95,7 @@ const See_CV = () => {
             <Title title="Formación"/>
             <ParentCont>
                 <FormExpTitle
-                    title={"Liceniatura en Ingeniería en Sistemas y Computación"}
+                    title={"Licenciatura en Ingeniería en Sistemas y Computación"}
                     location={"Univesidad Tecnológica de Panamá, Panamá"}
                     initDate={"2020"}
                     finalDate={"presente"}

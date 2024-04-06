@@ -39,7 +39,7 @@ const HomeSection = () => {
                 </h1>
                 <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
                 Bienvenido a mi portafolio digital, soy un desarrollador entusiasta con experiencia en diversos 
-                lenguajes y tecnologías, y este espacio es mi lienzo digital donde te puedo mostar los frutos 
+                lenguajes y tecnologías, y este espacio es mi lienzo digital donde te puedo mostrar los frutos 
                 de mi trabajo.
                 </p>
                 <div>
