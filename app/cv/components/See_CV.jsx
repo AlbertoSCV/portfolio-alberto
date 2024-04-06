@@ -334,7 +334,7 @@ const See_CV = () => {
         </div>
         <div className='mb-14 grid grid-cols-1 sm:flex sm:flex-row sm:justify-center md:justify-start'>
             <Link href='/cv.pdf' download="cv" className='mx-10'>
-                <button href='/cv' className="font-semibold px-12 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#FDA000] to-[#D3208B] text-white hover:bg-slate-200">
+                <button href='/cv' className="font-semibold px-10 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#FDA000] to-[#D3208B] text-white hover:bg-slate-200">
                     Descargar CV
                 </button>
             </Link>
