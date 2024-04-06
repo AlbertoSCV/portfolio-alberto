@@ -17,8 +17,15 @@ const See_CV = () => {
     initial={{ opacity: 0, scale: 0.85}} 
     animate={{opacity: 1, scale: 1}} 
     transition={{duration: 0.7, delay:0.2}} 
-    className='mt-14'>
+    className='mt-10'>
         <div>
+            <div className='hidden sm:flex sm:flex-row sm:justify-end'>
+                <Link href='/cv.pdf' download="cv" className='mr-6 absolute sm:mt-5 md:mt-4'>
+                    <button href='/cv' className="font-semibold px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-tr from-[#FDA000] to-[#D3208B] text-white hover:bg-slate-200">
+                        Descargar CV
+                    </button>
+                </Link>
+            </div>
             <Title title="Perfil"/>
             <ParentCont>
                 <div className='grid grid-cols-1 sm:grid-cols-12'>
@@ -77,7 +84,7 @@ const See_CV = () => {
                         <span className='font-bold pr-2'>
                             Página Web:
                         </span>
-                        <Link className="text-sm sm:text-base text-orange-500" href={"/"}>
+                        <Link className="text-sm sm:text-base hover:text-white text-orange-500" href={"/"}>
                             www.albertosomoza.net
                         </Link>
                     </p>
@@ -310,7 +317,7 @@ const See_CV = () => {
                 /> 
             </ParentCont>
         </div>
-        <div className='mb-14'>
+        <div className='mb-8'>
             <Title title="Voluntariado"/>
             <ParentCont>
                 <FormExpTitle
@@ -325,8 +332,12 @@ const See_CV = () => {
                 </p>
             </ParentCont>
         </div>
-        <div>
-
+        <div className='mb-14 grid grid-cols-1 sm:flex sm:flex-row sm:justify-center md:justify-start'>
+            <Link href='/cv.pdf' download="cv" className='mx-10'>
+                <button href='/cv' className="font-semibold px-12 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#FDA000] to-[#D3208B] text-white hover:bg-slate-200">
+                    Descargar CV
+                </button>
+            </Link>
         </div>
     </motion.div>
   )
