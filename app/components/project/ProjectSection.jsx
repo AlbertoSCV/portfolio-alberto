@@ -38,7 +38,7 @@ const projectsInfo = [
   {
     id: 4,
     title: "Sistema Solar - Three.js",
-    desc: "Sistema solar interactivo utilizando Express, Node.js y Three.js en el frontend Esta combinación permitió una gestión eficiente del servidor y una excelente calidad visual. Se utilizaron técnicas de post procesado de iluminación para alcanzar efectos realistas.",
+    desc: "Sistema solar interactivo utilizando Express, Node.js y Three.js en el frontend. Se utilizaron técnicas de post procesado de iluminación para alcanzar efectos realistas.",
     path: "/images/projects/threejs.png",
     gitUrl: "https://github.com/AlbertoSCV/solar-system",
     prevUrl: "https://solar-system.albertosomoza.net",
