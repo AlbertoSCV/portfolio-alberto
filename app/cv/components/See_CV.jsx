@@ -19,7 +19,7 @@ const See_CV = () => {
     transition={{duration: 0.7, delay:0.2}} 
     className='mt-10'>
         <div>
-            <h1 className='ml-8 font-extrabold text-6xl my-8'>
+            <h1 className='ml-8 font-extrabold text-3xl sm:text-5xl md:text-6xl my-8'>
                 Curriculum Vitae
             </h1>
             <div className='hidden sm:flex sm:flex-row sm:justify-end'>
