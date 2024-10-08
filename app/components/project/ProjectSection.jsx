@@ -9,7 +9,7 @@ const projectsInfo = [
     id: 1,
     title: "Portafolio",
     desc: "Es una muestra de mis proyectos de programación, destacando mis habilidades y experiencia en desarrollo.",
-    path: "/images/projects/portfolio.jpg",
+    path: "/images/projects/portafolio.png",
     gitUrl: "https://github.com/AlbertoSCV/portfolio-alberto",
     prevUrl: "/",
     tag: ["Todos", "Web"],
@@ -28,7 +28,7 @@ const projectsInfo = [
   {
     id: 3,
     title: "Autorizaciones y Rosters",
-    desc: "Proyecto actualmente en desarrollo en la compañia Copa Airlines, es de código privado por lo que no es accesible.",
+    desc: "Sistema de manejo de rosters y autorizaciones del personal de mantenimiento técnico de la aerolínea Copa Airlines.",
     path: "/images/projects/auth-rost.jpg",
     gitUrl: "/",
     prevUrl: "/",
@@ -38,64 +38,21 @@ const projectsInfo = [
   {
     id: 4,
     title: "Sistema Solar - Three.js",
-    desc: "Sistema solar interactivo utilizando Express, Node.js y Three.js en el frontend. Se utilizaron técnicas de post procesado de iluminación para alcanzar efectos realistas.",
+    desc: "Sistema solar interactivo utilizando Express, Node.js y Three.js en el frontend.",
     path: "/images/projects/threejs.jpg",
     gitUrl: "https://github.com/AlbertoSCV/solar-system",
     prevUrl: "https://solar-system.albertosomoza.net",
     tag: ["Todos", "Web", "Server"],
     type: "public"
-  }
-]
-
-const projectsInfo1 = [
-  {
-    id: 1,
-    title: "Proyecto 1",
-    desc: "Desc Proyecto 1",
-    path: "/images/projects/project-template.png",
-    gitUrl: "/",
-    prevUrl: "/",
-    tag: ["Todos", "Web"],
-    type: "public"
-  },
-  {
-    id: 2,
-    title: "Proyecto 2",
-    desc: "Desc Proyecto 2",
-    path: "/images/projects/project-template.png",
-    gitUrl: "/",
-    prevUrl: "/",
-    tag: ["Todos", "Server"],
-    type: "public"
-  },
-  {
-    id: 3,
-    title: "Proyecto 3",
-    desc: "Desc Proyecto 3",
-    path: "/images/projects/project-template.png",
-    gitUrl: "/",
-    prevUrl: "/",
-    tag: ["Todos", "Móvil"],
-    type: "public"
-  },
-  {
-    id: 4,
-    title: "Proyecto 4",
-    desc: "Desc Proyecto 4",
-    path: "/images/projects/project-template.png",
-    gitUrl: "/",
-    prevUrl: "/",
-    tag: ["Todos", "Desktop"],
-    type: "public"
   },
   {
     id: 5,
-    title: "Proyecto 5",
-    desc: "Desc Proyecto 5",
-    path: "/images/projects/project-template.png",
-    gitUrl: "/",
-    prevUrl: "/",
-    tag: ["Todos", "Redes"],
+    title: "Visualización de Autorizaciones",
+    desc: "Sistema de visualización de autorizaciones del personal de mantenimiento técnico de Copa Airlines desarrolado con Next.js.",
+    path: "/images/projects/copa-auth.png",
+    gitUrl: "https://github.com/AlbertoSCV",
+    prevUrl: "https://auths.copa.asc-server.xyz",
+    tag: ["Todos", "Web", "Móvil"],
     type: "public"
   }
 ]

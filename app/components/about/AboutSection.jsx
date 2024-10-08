@@ -21,6 +21,7 @@ const TAB_DATA=[
             <li>Next.js</li>
             <li>Ubuntu Server</li>
             <li>Infraestructura de redes</li>
+            <li>Infraestructura en la nube</li>
         </ul>
         )
     },
@@ -70,13 +71,15 @@ const TAB_DATA=[
                     <li className='pl-4 mt-2 text-base font-normal flex justify-between'>
                         Soporte Técnico en Grupo Athens
                         <span className="text-sm text-right text-[#ADB7BE]">
-                            2023-presente
+                            jun 2023-presente
                         </span>
                     </li>
-                        <li className='pl-4 mt-2 text-base font-normal flex justify-between'>
+                    <li className='pl-4 mt-2 text-base font-normal flex justify-between'>
+                        <span className='text-left'>
                             Prácticante como desarrollador en Copa Airlines
+                        </span>
                         <span className="text-sm text-right text-[#ADB7BE]">
-                            2024-presente
+                            abr 2024-sep 2024
                         </span>
                     </li>
                 </ul>
@@ -123,14 +126,18 @@ const AboutSection = () => {
                 />
                 <div className="mt-8 md:mt-0 flex flex-col h-full">
                     <h2 className="text-3xl font-bold">Resumen</h2>
-                    <p className="text-base lg:text-lg text-[#ADB7BE]">
-                        Como estudiante de ingeniería en sistemas, 
-                        he adquirido una sólida experiencia en una variedad de lenguajes y 
-                        entornos de desarrollo, desde los fundamentos de C hasta la creación de 
-                        aplicaciones web y móviles con tecnologías como Java, Android Studio, .NET, 
-                        React, NextJS y NodeJS. Mi conocimiento en bases de datos incluye SQL, donde 
-                        he desarrollado habilidades en diseño, consultas complejas y optimización del 
-                        rendimiento. 
+                    <p className="text-base lg:text-lg text-[#ADB7BE] text-justify">
+                    A lo largo de mi carrera, he adquirido una amplia experiencia en el 
+                    desarrollo de soluciones tecnológicas, tanto a nivel académico como en 
+                    prácticas profesionales, incluyendo gestión y manejo de infraestructura 
+                    de comercios a nivel nacional, como creación y desarrollo 
+                    proyectos de optimización y automatización en empresas como ServiBird y Copa Airlines.
+
+                    Mi enfoque está en la resolución de problemas a través de la innovación 
+                    tecnológica, con experiencia en programación web, bases de datos SQL y 
+                    NoSQL, manejo de infraestructura de red, y entornos de sistemas operativos 
+                    como Linux y Windows. Este espacio es una muestra de mis habilidades y 
+                    proyectos que reflejan mi compromiso y dedicación al campo de la ingeniería de software.
                     </p>
                     <div className="flex flex-row justify-start mt-8">
                         <TabButton

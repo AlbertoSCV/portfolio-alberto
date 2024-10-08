@@ -38,9 +38,10 @@ const HomeSection = () => {
                     />
                 </h1>
                 <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
-                Bienvenido a mi portafolio digital, soy un desarrollador entusiasta con experiencia en diversos 
-                lenguajes y tecnologías, y este espacio es mi lienzo digital donde te puedo mostrar los frutos 
-                de mi trabajo.
+                Bienvenido a mi portafolio digital, soy un Ingeniero en Sistemas y Computación 
+                con una sólida experiencia en el desarrollo de soluciones tecnológicas innovadoras. 
+                Este espacio es una ventana a mis proyectos y habilidades, donde podrás explorar el trabajo 
+                que refleja mi pasión por la ingeniería, resolución de problemas y la optimización de sistemas.
                 </p>
                 <div>
                     <Link href='#contact-me'>
@@ -48,20 +49,19 @@ const HomeSection = () => {
                             Contáctame
                         </button>
                     </Link>
-                    <Link href={"/cv"}>
+                    <Link href='/cv_alberto_somoza.pdf' download="cv">
                         <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-yellow-400 via-orange-600 to-red-500 hover:bg-slate-800 text-white mt-3">
                             <span className="block bg-[#181818] hover:bg-[#282828] rounded-full px-5 py-2">
                                 Mira mi CV
                             </span>
                         </button>
                     </Link>
-                    
                 </div>
             </div>
             <div className="col-span-5 place-self-center mt-6 md:ml-14">
                 <div className="rounded-full bg-[#101010] w-[250px] h-[250px] lg:w-[275px] lg:h-[275px] relative ">
                     <Image 
-                    src="/images/pfp_2024.jpeg"
+                    src="/images/pfp_2024.jpg"
                     alt='home-image'
                     width={225}
                     height={225}
