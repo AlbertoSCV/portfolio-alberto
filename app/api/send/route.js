@@ -20,8 +20,8 @@ export async function POST(req, res) {
       react: (<>
         <p>Ponte en contacto con este usuario: {email}</p>
         <p>Contenido:</p>
-        <h1>{subject}</h1>
-        <p>{message}</p>
+        <h1>{String(subject)}</h1>
+        <p>{String(message)}</p>
       </>),
     });
 
