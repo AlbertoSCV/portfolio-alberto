@@ -6,6 +6,66 @@ import {motion, useInView} from 'framer-motion'
 
 const projectsInfo = [
   {
+    id: 9,
+    title: "Formulario de Devoluciones USPG",
+    desc: "Web en Next.js para devoluciones de productos farmacéuticos, integrada mediante API REST al ERP de la empresa para automatizar procesos.",
+    path: "/images/projects/return-form.jpg",
+    gitUrl: "/",
+    prevUrl: "/",
+    tag: ["Todos", "Web", "Móvil"],
+    type: "private"
+  },
+  {
+    id: 8,
+    title: "Cámara de Emisores de Valores de Panamá",
+    desc: "Actualización de la página web de la Cámara de Emisores de Valores de Panamá con una nueva versión desarrollada en Next.js (en desarrollo).",
+    path: "/images/projects/emisores.jpg",
+    gitUrl: "/",
+    prevUrl: "/",
+    tag: ["Todos", "Web", "Móvil"],
+    type: "private"
+  },
+  {
+    id: 7,
+    title: "Proxmox | HomeLab",
+    desc: "Laboratorio personal con Proxmox para virtualización, servicios en Docker y compartición de archivos mediante Samba.",
+    path: "/images/projects/proxmox.png",
+    gitUrl: "/",
+    prevUrl: "/",
+    tag: ["Todos", "Server", "Redes"],
+    type: "private"
+  },
+  {
+    id: 6,
+    title: "AgroRed",
+    desc: "Plataforma de financiamiento colaborativo para proyectos agrónomos y ganaderos desarrollada en Next.js.",
+    path: "/images/projects/agrored.jpg",
+    gitUrl: "https://github.com/AlbertoSCV/ecomm-quantum-coders",
+    prevUrl: "https://ecomm-quantum-coders.vercel.app/",
+    tag: ["Todos", "Web"],
+    type: "public"
+  },
+  {
+    id: 3,
+    title: "Autorizaciones y Rosters",
+    desc: "Sistema de manejo de rosters y autorizaciones del personal de mantenimiento técnico de la aerolínea Copa Airlines.",
+    path: "/images/projects/auth-rost.jpg",
+    gitUrl: "/",
+    prevUrl: "/",
+    tag: ["Todos", "Desktop"],
+    type: "private"
+  },
+  {
+    id: 5,
+    title: "Visualización de Autorizaciones",
+    desc: "Sistema de visualización de autorizaciones del personal de mantenimiento técnico de Copa Airlines desarrolado con Next.js.",
+    path: "/images/projects/copa-auth.png",
+    gitUrl: "/",
+    prevUrl: "/",
+    tag: ["Todos", "Web", "Móvil"],
+    type: "private"
+  },
+  {
     id: 1,
     title: "Portafolio",
     desc: "Es una muestra de mis proyectos de programación, destacando mis habilidades y experiencia en desarrollo.",
@@ -26,16 +86,6 @@ const projectsInfo = [
     type: "public"
   },
   {
-    id: 3,
-    title: "Autorizaciones y Rosters",
-    desc: "Sistema de manejo de rosters y autorizaciones del personal de mantenimiento técnico de la aerolínea Copa Airlines.",
-    path: "/images/projects/auth-rost.jpg",
-    gitUrl: "/",
-    prevUrl: "/",
-    tag: ["Todos", "Desktop"],
-    type: "private"
-  },
-  {
     id: 4,
     title: "Sistema Solar - Three.js",
     desc: "Sistema solar interactivo utilizando Express, Node.js y Three.js en el frontend.",
@@ -44,16 +94,6 @@ const projectsInfo = [
     prevUrl: "https://solar-system.albertosomoza.net",
     tag: ["Todos", "Web", "Server"],
     type: "public"
-  },
-  {
-    id: 5,
-    title: "Visualización de Autorizaciones",
-    desc: "Sistema de visualización de autorizaciones del personal de mantenimiento técnico de Copa Airlines desarrolado con Next.js.",
-    path: "/images/projects/copa-auth.png",
-    gitUrl: "/",
-    prevUrl: "/",
-    tag: ["Todos", "Web", "Móvil"],
-    type: "private"
   }
 ]
 
