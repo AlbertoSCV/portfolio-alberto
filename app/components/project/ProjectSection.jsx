@@ -50,15 +50,15 @@ const projectsInfo = [
     title: "Visualización de Autorizaciones",
     desc: "Sistema de visualización de autorizaciones del personal de mantenimiento técnico de Copa Airlines desarrolado con Next.js.",
     path: "/images/projects/copa-auth.png",
-    gitUrl: "https://github.com/AlbertoSCV",
-    prevUrl: "https://auths.copa.asc-server.xyz",
+    gitUrl: "/",
+    prevUrl: "/",
     tag: ["Todos", "Web", "Móvil"],
-    type: "public"
+    type: "private"
   }
 ]
 
 const ProjectSection = () => {
-
+ 
   const MotionProjectCard = motion(ProjectCard);
 
   const [tag, setTag] = useState("Todos");
