@@ -91,7 +91,7 @@ const projectsInfo = [
     desc: "Sistema solar interactivo utilizando Express, Node.js y Three.js en el frontend.",
     path: "/images/projects/threejs.jpg",
     gitUrl: "https://github.com/AlbertoSCV/solar-system",
-    prevUrl: "https://solar-system.albertosomoza.net",
+    prevUrl: "https://solar-system.albertosomoza.com",
     tag: ["Todos", "Web", "Server"],
     type: "public"
   }
